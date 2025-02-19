@@ -4,7 +4,7 @@ Write a test that calls the `findMax` function and prints the result to the cons
 
 # Exercise 0x01
 Implement a function `calculateFactorial` that computes the factorial of a given non-negative integer.
-Write a test that calls the `findMax` function and prints the result to the console.
+Write a test that calls the `calculateFactorial` function and prints the result to the console.
 
 # Exercise 0x02
 Define overloaded functions to calculate the area of a rectangle, a circle, and a triangle.
@@ -25,9 +25,9 @@ int main(int argc, char** argv) {
   double v, r;
 
   std::cout << "This program calculates the power dissipated in a simple resistor circuit" << std::endl;
-  std::cout << "Input the power source voltage [V]: " >> std::endl;
-  std:cin >> v;
-  std::cout << "Input the resistance R [Ohm]: " >> std::endl;
+  std::cout << "Input the power source voltage [V]: " << std::endl;
+  std::cin >> v;
+  std::cout << "Input the resistance R [Ohm]: " << std::endl;
   std::cin >> r;
 
   double power = pow(v, 2) / r;
