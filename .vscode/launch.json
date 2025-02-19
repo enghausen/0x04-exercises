@@ -11,7 +11,15 @@
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
-      "MIMode": "gdb",
+      "osx": {
+        "MIMode": "lldb"
+      },
+      "windows": {
+        "MIMode": "gdb",
+      },
+      "linux": {
+        "MIMode": "gdb",
+      },
       "preLaunchTask": "build_current_file",
     }, {
       "name": "Build and Debug Current Directory",
@@ -23,7 +31,15 @@
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
-      "MIMode": "gdb",
+      "osx": {
+        "MIMode": "lldb"
+      },
+      "windows": {
+        "MIMode": "gdb",
+      },
+      "linux": {
+        "MIMode": "gdb",
+      },
       "preLaunchTask": "build_current_directory",
     },
   ]
