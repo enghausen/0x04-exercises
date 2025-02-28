@@ -2,45 +2,56 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Build and Debug Current File",
+      "name": "Run Exercise 0x00",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/${fileBasenameNoExtension}.out",
+      "program": "${workspaceFolder}/build/exercise-0x00/main.exe",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
-      "osx": {
-        "MIMode": "lldb"
-      },
-      "windows": {
-        "MIMode": "gdb",
-      },
-      "linux": {
-        "MIMode": "gdb",
-      },
-      "preLaunchTask": "build_current_file",
-    }, {
-      "name": "Build and Debug Current Directory",
+      "MIMode": "gdb",
+      "preLaunchTask": "Build Exercise 0x00"
+    },
+    {
+      "name": "Run Exercise 0x01",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/${fileBasenameNoExtension}.out",
+      "program": "${workspaceFolder}/build/exercise-0x01/main.exe",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
-      "osx": {
-        "MIMode": "lldb"
-      },
-      "windows": {
-        "MIMode": "gdb",
-      },
-      "linux": {
-        "MIMode": "gdb",
-      },
-      "preLaunchTask": "build_current_directory",
+      "MIMode": "gdb",
+      "preLaunchTask": "Build Exercise 0x01"
+    },
+    {
+      "name": "Run Exercise 0x02",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/exercise-0x02/main.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "preLaunchTask": "Build Exercise 0x02"
+    },
+    {
+      "name": "Run Exercise 0x03",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/exercise-0x03/main.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "preLaunchTask": "Build Exercise 0x03"
     },
   ]
 }

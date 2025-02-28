@@ -1,34 +1,87 @@
 {
-  "version": "2.0.0",
   "tasks": [
-    {
-      "label": "build_current_file",
-      "type": "shell",
-      "command": "g++",
-      "args": [
-        "-g",
-        "${workspaceFolder}/src/${fileBasename}",
-        "-o",
-        "${workspaceFolder}/build/${fileBasenameNoExtension}.out"
-      ],
-      "group": "build",
-      "problemMatcher": [
-        "$gcc"
-      ],
-    }, {
-      "label": "build_current_directory",
-      "type": "shell",
-      "command": "g++",
-      "args": [
-        "-g",
-        "${fileDirname}/*.cpp",
-        "-o",
-        "${workspaceFolder}/build/${fileBasenameNoExtension}.out"
-      ],
-      "group": "build",
-      "problemMatcher": [
-        "$gcc"
-      ],
-    },
-  ]
+      {
+          "type": "cppbuild",
+          "label": "Build Exercise 0x00",
+          "command": "C:\\Code\\Software\\msys64\\ucrt64\\bin\\g++.exe",
+          "args": [
+              "-fdiagnostics-color=always",
+              "-g",
+              "${workspaceFolder}/solutions/exercise-0x00/main.cpp",
+              "-o",
+              "${workspaceFolder}/build/exercise-0x00/main.exe"
+          ],
+          "options": {
+              "cwd": "${workspaceFolder}/build"
+          },
+          "problemMatcher": ["$gcc"],
+          "group": {
+              "kind": "build"
+          },
+          "detail": "Compiles exercise 1"
+      },
+      {
+          "type": "cppbuild",
+          "label": "Build Exercise 0x01",
+          "command": "C:\\Code\\Software\\msys64\\ucrt64\\bin\\g++.exe",
+          "args": [
+              "-fdiagnostics-color=always",
+              "-g",
+              "${workspaceFolder}/solutions/exercise-0x01/main.cpp",
+              "-o",
+              "${workspaceFolder}/build/exercise-0x01/main.exe"
+          ],
+          "options": {
+              "cwd": "${workspaceFolder}/build"
+          },
+          "problemMatcher": ["$gcc"],
+          "group": {
+              "kind": "build"
+          },
+          "detail": "Compiles exercise 2"
+      },
+      {
+          "type": "cppbuild",
+          "label": "Build Exercise 0x02",
+          "command": "C:\\Code\\Software\\msys64\\ucrt64\\bin\\g++.exe",
+          "args": [
+              "-fdiagnostics-color=always",
+              "-g",
+              "-I${workspaceFolder}/solutions/exercise-0x02",
+              "${workspaceFolder}/solutions/exercise-0x02/main.cpp",
+              "${workspaceFolder}/solutions/exercise-0x02/area.cpp",
+              "-o",
+              "${workspaceFolder}/build/exercise-0x02/main.exe"
+          ],
+          "options": {
+              "cwd": "${workspaceFolder}/build"
+          },
+          "problemMatcher": ["$gcc"],
+          "group": {
+              "kind": "build"
+          },
+          "detail": "Compiles exercise 3"
+      },
+      {
+          "type": "cppbuild",
+          "label": "Build Exercise 0x03",
+          "command": "C:\\Code\\Software\\msys64\\ucrt64\\bin\\g++.exe",
+          "args": [
+              "-fdiagnostics-color=always",
+              "-g",
+              "${workspaceFolder}/solutions/exercise-0x03/main.cpp",
+              "-o",
+              "${workspaceFolder}/build/exercise-0x03/main.exe"
+          ],
+          "options": {
+              "cwd": "${workspaceFolder}/build"
+          },
+          "problemMatcher": ["$gcc"],
+          "group": {
+              "kind": "build"
+          },
+          "detail": "Compiles exercise 4"
+      }
+  ],
+  "version": "2.0.0"
 }
